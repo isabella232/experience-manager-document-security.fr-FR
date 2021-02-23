@@ -4,16 +4,16 @@ description: Utilisation d’AEM Document Security Extension for Microsoft Offic
 uuid: 8d98a355-df25-4d8e-ae76-a63a93f280c4
 contentOwner: dhv
 discoiquuid: df6ca960-ccfb-411a-b61d-d52bce0725a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 078b8815a52917f20fd8bdad4f0a1da756a66684
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
 ht-degree: 100%
 
 ---
 
 
-# Utilisation d’AEM Document Security Extension for Microsoft Office{#using-aem-document-security-extension-for-microsoft-office}
+# Utilisation d’AEM Document Security Extension for Microsoft Office {#using-aem-document-security-extension-for-microsoft-office}
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[Dépannage d&#39;AEM Document Security Extension for Microsoft Office](../troubleshooting-document-security-extension.md) {#troubleshooting-aem-document-security-extension-for-microsoft-office}
+>[Dépannage d’AEM Document Security Extension for Microsoft Office](../troubleshooting-document-security-extension.md) {#troubleshooting-aem-document-security-extension-for-microsoft-office}
 >
->Si vous rencontrez des problèmes lors de l&#39;installation, de la configuration ou de l&#39;utilisation d&#39;AEM Document Security Extension for Microsoft Office, suivez les instructions figurant dans ce document.
+>Si vous rencontrez des problèmes lors de l’installation, de la configuration ou de l’utilisation d’AEM Document Security Extension for Microsoft Office, suivez les instructions figurant dans ce document.
 
