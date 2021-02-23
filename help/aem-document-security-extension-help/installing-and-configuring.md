@@ -1,14 +1,14 @@
 ---
-title: Installation et configuration de AEM Document Security
-description: Installation et configuration de AEM Document Security
+title: Installation et configuration d’AEM Document Security
+description: Installation et configuration d’AEM Document Security
 uuid: 799702ab-019b-4d5f-bdb5-71df3ec88b8b
 contentOwner: dhv
 discoiquuid: 3a13781d-02c4-404b-893a-6cd094a0295b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19de0b62ac493c7507581abb607b008c64f77597
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '64'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->[AEM Document Security for Microsoft Office - Notes de mise à jour](../document-security-extension-release-notes.md) {#aem-document-security-for-microsoft-office-release-notes}
+>[AEM Document Security for Microsoft Office – Notes de mise à jour](../document-security-extension-release-notes.md) {#aem-document-security-for-microsoft-office-release-notes}
 >
 >Lisez les notes de mise à jour avant d’installer AEM Document Security 6.2 Extension for Microsoft Office.
 
