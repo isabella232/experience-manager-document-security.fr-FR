@@ -1,7 +1,7 @@
 ---
 source-git-commit: 19de0b62ac493c7507581abb607b008c64f77597
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '431'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ menaçants, injurieux ou nuisibles.
 
 ## Portée
 
-Ce code de conduite s’applique à la fois à l’&#39;espace du projet et
+Ce code de conduite s’applique à la fois à l’espace du projet et
 aux environnements publics lorsqu’une personne représente le projet ou sa communauté. Parmi les exemples de représentation d’un projet ou d’une communauté, citons l’utilisation d’une adresse électronique officielle de projet, la publication par le biais d’un compte de réseau social officiel ou l’agissement en tant que représentant désigné à l’occasion d’un événement en ligne ou hors ligne. La représentation d’un projet peut être définie plus précisément et clarifiée par les responsables du projet.
 
 ## Application
