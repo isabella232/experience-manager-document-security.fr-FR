@@ -1,14 +1,14 @@
 ---
 source-git-commit: 19de0b62ac493c7507581abb607b008c64f77597
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '296'
 ht-degree: 100%
 
 ---
 # Contribution
 
-Merci d’avoir choisi d&#39;apporter votre contribution !
+Merci d’avoir choisi d’apporter votre contribution !
 
 Vous trouverez ci-dessous un ensemble de directives à suivre lorsque vous contribuez à ce projet.
 
@@ -20,7 +20,7 @@ implique le respect de ce code. Veuillez signaler tout comportement inacceptable
 
 ## Guide du contributeur
 
-Voir le [Guide du contributeur](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Voir le [Guide du contributeur](https://docs.adobe.com/content/help/fr-FR/contributor/contributor-guide/introduction.html).
 
 ## Vous avez une question ?
 
@@ -29,7 +29,7 @@ Commencez par signaler un problème. Les validateurs de ce projet peuvent parven
 ## Contrat de licence du contributeur
 
 Toutes les contributions tierces à ce projet doivent être accompagnées d’un contrat de licence de contributeur
-signé permettant d’&#39;autoriser Adobe à redistribuer vos contributions
+signé. permettant d’autoriser Adobe à redistribuer vos contributions
 dans le cadre du projet. [Signez notre contrat de licence du contributeur](http://opensource.adobe.com/cla.html). Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
 
 ## Révision du code
