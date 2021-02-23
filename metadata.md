@@ -1,19 +1,19 @@
 ---
 cloud: experience-cloud
 solution-title: Formation et assistance
-solution-hub-url: https://helpx.adobe.com/support/experience-manager.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr
 getting-started-title: Prise en main
 getting-started-url: https://helpx.adobe.com/fr/experience-manager/get-started.html
 tutorials-title: Tutoriels
-tutorials-url: https://experienceleague.adobe.com/?tag=Tutorial#recommended/solutions/experience-manage
+tutorials-url: https://experienceleague.adobe.com/?tag=Tutorial&lang=fr#recommended/solutions/experience-manage
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-document-security.fr-FR
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 29c078e0820b42b53eb65061893e45c8cb63e549
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '150'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
