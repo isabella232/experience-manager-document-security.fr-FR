@@ -182,7 +182,8 @@ Si vous n’avez pas encore de compte Document Security, Document Security peut 
 Après vous être enregistré et avoir activé votre compte, vous pouvez utiliser les fichiers protégés par une stratégie pour lesquels vous disposez d’une autorisation.
 
 >[!NOTE]
-Si vous recevez un fichier protégé par une stratégie alors que vous ne possédez pas de compte Document Security, ou si vous recevez une invitation à vous enregistrer, contactez l’expéditeur du fichier afin qu’il vous aide.
+>
+>Si vous recevez un fichier protégé par une stratégie alors que vous ne possédez pas de compte Document Security, ou si vous recevez une invitation à vous enregistrer, contactez l’expéditeur du fichier afin qu’il vous aide.
 
 Si vous recevez une invitation à vous enregistrer par email à l’aide de Document Security, vous pouvez vous enregistrer à l’aide de l’URL indiquée pour ouvrir la page d’enregistrement en ligne. Après l’enregistrement, vous recevez un second avis sur l’activation de votre compte.
 
@@ -193,7 +194,8 @@ Si vous recevez une invitation à vous enregistrer par email à l’aide de Docu
 1. Entrez votre nom, votre organisation et votre mot de passe dans les zones appropriées. Votre mot de passe peut être n’importe quelle combinaison de huit caractères.
 
    >[!NOTE]
-   Veillez à choisir un mot de passe facile à retenir ; aucune méthode n’est proposée pour rechercher des mots de passe oubliés.
+   >
+   >Veillez à choisir un mot de passe facile à retenir ; aucune méthode n’est proposée pour rechercher des mots de passe oubliés.
 
 1. Cliquez sur **Enregistrer**. Un message s’affiche pour vous demander de vérifier votre adresse électronique en vue d’envoyer un email d’activation.
 1. Ouvrez l’email de confirmation d’enregistrement de Document Security.
@@ -331,7 +333,8 @@ Vous pouvez appliquer les stratégies disponibles à un fichier, y compris celle
 Une fois la stratégie appliquée, elle est ajoutée à la liste Récemment utilisées du menu AEM Document Security afin de vous faciliter l’application des stratégies les plus fréquemment utilisées. Si vous utilisez plusieurs instances de Document Security, la liste Récemment utilisées répertorie uniquement les stratégies du serveur auquel vous êtes connecté ou du serveur par défaut si vous ne vous êtes encore connecté à aucune instance de Document Security.
 
 >[!NOTE]
-Vous pouvez appliquer des stratégies uniquement aux fichiers de documents Word (.doc, également .docx et .docm dans Microsoft Office 2010 et 2013), de classeurs Excel (.xls, également .xlsx et .xlsm dans Microsoft Office 2010 et 2013) et de présentations PowerPoint (.ppt, également .pptx et .pptm dans Microsoft 2010 et 2013). Vous ne pouvez pas appliquer de stratégies aux fichiers de modèle Word (.dot), aux fichiers de modèle Excel (.xlt) ni aux fichiers de modèle de conception PowerPoint (.pot).
+>
+>Vous pouvez appliquer des stratégies uniquement aux fichiers de documents Word (.doc, également .docx et .docm dans Microsoft Office 2010 et 2013), de classeurs Excel (.xls, également .xlsx et .xlsm dans Microsoft Office 2010 et 2013) et de présentations PowerPoint (.ppt, également .pptx et .pptm dans Microsoft 2010 et 2013). Vous ne pouvez pas appliquer de stratégies aux fichiers de modèle Word (.dot), aux fichiers de modèle Excel (.xlt) ni aux fichiers de modèle de conception PowerPoint (.pot).
 
 #### Application d’une stratégie {#apply-a-policy}
 
@@ -362,7 +365,8 @@ Document Security Extension for Microsoft Office limite certaines fonctionnalit�
 Si vous travaillez avec un fichier protégé par une stratégie, il se peut que certaines fonctionnalités du produit ne soient pas disponibles ou ne fonctionnent pas comme d’habitude. Si un fichier non protégé est également ouvert, la plupart des fonctions du fichier non protégé sont activées, à l’exception de celles qui vous permettent d’importer ou de copier du contenu d’un fichier protégé par une stratégie pour lequel vous ne disposez pas des autorisations de copie ou d’exportation.
 
 >[!NOTE]
-Lorsque vous utilisez des applications Office prises en charge par Document Security Extension, il est recommandé de désactiver le paramètre Windows DEP. En outre, pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security Extension et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
+>
+>Lorsque vous utilisez des applications Office prises en charge par Document Security Extension, il est recommandé de désactiver le paramètre Windows DEP. En outre, pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security Extension et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
 
 Si une fonction n’est pas disponible, le nom de la commande dans le menu et le bouton de barre d’outils correspondant ne sont pas disponibles. Dans Document Security Extension for Microsoft Office, lorsque vous placez le pointeur de la souris sur une commande ou un bouton, une info-bulle indique que la commande est rendue indisponible par Document Security.
 
@@ -389,7 +393,8 @@ Si vous en avez l’autorisation, vous pouvez supprimer la protection de straté
    Si vous n’avez pas encore indiqué d’informations de connexion à Document Security, une boîte de dialogue vous invite à saisir votre nom d’utilisateur et votre mot de passe.
 
 >[!NOTE]
-Si vous ne pouvez pas supprimer une stratégie d’un fichier que vous avez protégé, contactez un administrateur Document Security.
+>
+>Si vous ne pouvez pas supprimer une stratégie d’un fichier que vous avez protégé, contactez un administrateur Document Security.
 
 ### Affichage des paramètres de protection {#viewing-security-settings}
 
@@ -408,7 +413,8 @@ Si votre administrateur a activé la fonctionnalité d’application automatique
 Cette application automatique étant activée, Document Security Extension for Microsoft Office vous invite à vous connecter au serveur Document Security. Vous devrez fournir votre nom d’utilisateur et votre mot de passe pour être authentifié par le serveur. Si vous avez fourni les informations de connexion appropriées, le document est enregistré et protégé.
 
 >[!NOTE]
-Si vous ne pouvez pas vous connecter à Document Security, le document peut être enregistré ou non. Cela dépend de la manière dont votre administrateur a configuré la stratégie d’application automatique. Vérifiez avec l’administrateur comment les documents sont traités dans cette situation.
+>
+>Si vous ne pouvez pas vous connecter à Document Security, le document peut être enregistré ou non. Cela dépend de la manière dont votre administrateur a configuré la stratégie d’application automatique. Vérifiez avec l’administrateur comment les documents sont traités dans cette situation.
 
 ### Synchronisation en vue de l’accès hors connexion {#synchronizing-for-offline-access}
 
@@ -546,7 +552,8 @@ La plupart des stratégies accordent des autorisations complètes à l’éditeu
 Si une fonction n’est pas disponible, le nom de la commande dans le menu et le bouton correspondant de la barre d’outils apparaissent en grisé.
 
 >[!NOTE]
-L’application d’une stratégie à un fichier contenant un lien vers un fichier incorporé n’applique pas la stratégie au fichier lié. Document Security for Microsoft Office n’étend pas la protection aux fichiers liés.
+>
+>L’application d’une stratégie à un fichier contenant un lien vers un fichier incorporé n’applique pas la stratégie au fichier lié. Document Security for Microsoft Office n’étend pas la protection aux fichiers liés.
 
 * Les fichiers Word, Excel et PowerPoint protégés par une stratégie ne peuvent pas s’ouvrir dans une fenêtre du navigateur Internet Explorer.
 * Les utilisateurs qui n’ont obtenu que l’autorisation Modifier ne peuvent pas copier du contenu dans un fichier issu d’une autre application à l’aide du presse-papiers Windows. Les utilisateurs peuvent copier du contenu dans des fichiers en activant l’option Presse-papiers de Microsoft Office.
