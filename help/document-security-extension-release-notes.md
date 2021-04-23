@@ -5,14 +5,14 @@ uuid: f6ab73d4-ac4e-4fff-9bb8-917b75401653
 content-type: reference
 topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
+exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
 translation-type: ht
-source-git-commit: 403b800eab086d131beb65a496836158778954ee
+source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
 workflow-type: ht
 source-wordcount: '1030'
 ht-degree: 100%
 
 ---
-
 
 # AEM Document Security for Microsoft Office – Notes de mise à jour {#aem-document-security-for-microsoft-office-release-notes}
 
@@ -79,7 +79,7 @@ Ouverture du document protégé : si vous tentez d’ouvrir un document protég
 
 Lorsque vous ouvrez un document protégé depuis SharePoint Server, toutes les autorisations du document sont désactivées, quelle que soit la stratégie appliquée.
 
-### Application d’une stratégie avec un filigrane dynamique à Microsoft Excel 2013, Microsoft Excel 2016 et Microsoft Excel 2019 sans qu’aucune imprimante ne soit installée {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
+### Application d’une stratégie avec un filigrane dynamique à Microsoft Excel 2013, Microsoft Excel 2016 et Microsoft Excel 2019 sans qu’aucune imprimante ne soit installée {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
 Lorsque vous appliquez une stratégie avec filigrane dynamique à un fichier Excel 2013, 2016 et 2019 sur un ordinateur pour lequel aucune imprimante n’a été installée, puis que vous enregistrez le fichier, vous recevez le message d’erreur « Erreur interne lors de l’application du filigrane dynamique ». Cette erreur s’affiche également lorsque vous ouvrez de nouveau le fichier protégé. Le filigrane n’est pas appliqué et n’est pas visible depuis Afficher > Mise en page.
 
@@ -95,7 +95,7 @@ Quand vous protégez un fichier Microsoft Office partagé à l’aide de Documen
 
 Pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
 
-### Installation de Document Security Extension for Microsoft Office sur un ordinateur ayant Microsoft Office installé dans une langue non prise en charge {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
+### Installation de Document Security Extension for Microsoft Office sur un ordinateur doté de Microsoft Office dans une langue non prise en charge {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
 
 Avant d’installer Document Security Extension for Microsoft Office sur un ordinateur où une application Microsoft Office est installée dans une langue non prise en charge, vous devez ouvrir l’application Office au moins une fois.
 
