@@ -6,14 +6,14 @@ contentOwner: khsingh
 content-type: reference
 topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
+exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
 translation-type: ht
-source-git-commit: ac26ec61f62d7a3db2429c8a9d3f68b82ba8f77a
+source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
 workflow-type: ht
 source-wordcount: '294'
 ht-degree: 100%
 
 ---
-
 
 # Dépannage d’AEM Document Security Extension for Microsoft Office {#troubleshooting-aem-document-security-extension-for-microsoft-office}
 
@@ -37,7 +37,7 @@ Pour plus d’informations sur LoadBehavior, consultez l’article [Entrées du 
 
 ## Dépannage des tâches d’administration {#admintasks}
 
-Cette section aborde les problèmes qui pourraient survenir avec votre installation AEM Document Security Extension.
+Cette section aborde les problèmes qui pourraient survenir avec votre installation d’AEM Document Security Extension.
 
 ### Les applications Microsoft Office ne se lancent pas correctement après l’installation de Document Security Extension {#microsoft-office-applications-dont-start-smoothly-on-installing-document-security-extension}
 
