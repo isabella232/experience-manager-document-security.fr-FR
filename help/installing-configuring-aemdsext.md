@@ -5,14 +5,14 @@ uuid: 9d7eb6bb-4780-4d82-8657-7c6c6d523af0
 content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
+exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 translation-type: ht
-source-git-commit: ac385c538cdd7d3bb4772b92ee7a94b003595f56
+source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
 workflow-type: ht
 source-wordcount: '2796'
 ht-degree: 100%
 
 ---
-
 
 # Installation et configuration d’AEM Document Security Extension for Microsoft Office {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
@@ -253,7 +253,7 @@ Pour plus d’informations sur la configuration de la fonction d’application a
 Vous pouvez activer/désactiver l’interface utilisateur sans ruban en modifiant les paramètres dans le registre Windows. Effectuez les étapes suivantes pour mettre le registre à jour et activer l’interface utilisateur sans ruban :
 
 1. Effectuez une sauvegarde du registre Windows avant d’apporter des modifications. Pour obtenir des instructions détaillées, consultez [Comment modifier le registre Windows](https://support.microsoft.com/fr-fr/kb/136393).
-1. Dans la boîte de dialogue Editeur du registre, accédez à HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 ou HKEY_LOCAL_MACHINE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
+1. Dans l’éditeur du registre, accédez à HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 ou HKEY_LOCAL_MACHINE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. Créez une valeur (32 bits) Dword appelée **HidePluginUI**.
 
 1. Définissez la valeur de la propriété **HidePluginUI** sur 1 pour activer l’interface utilisateur sans ruban.
