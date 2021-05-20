@@ -6,15 +6,14 @@ content-type: reference
 topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 100%
 
 ---
 
-# AEM Document Security for Microsoft Office – Notes de mise à jour {#aem-document-security-for-microsoft-office-release-notes}
+# AEM Document Security for Microsoft Office – Notes de mise à jour{#aem-document-security-for-microsoft-office-release-notes}
 
 ## Nouveautés dans AEM Document Security for Microsoft Office {#whats-new-in-aem-document-security-for-microsoft-office}
 
@@ -40,11 +39,11 @@ Lisez les informations de ce document avant d’installer AEM Document Security 
 
 AEM Document Security Extension for Microsoft Office ne fonctionne pas avec les plug-ins tiers. Désinstallez tous les modules externes tiers de Microsoft Office avant d’installer Document Security Extension for Microsoft Office.
 
-### Options de menu désactivées dans Microsoft Word, Excel et PowerPoint {#disabled-menu-options-in-microsoft-word-excel-and-powerpoint}
+### Options de menu désactivées dans Microsoft Word, Excel et PowerPoint  {#disabled-menu-options-in-microsoft-word-excel-and-powerpoint}
 
 AEM Document Security Extension for Microsoft Office utilise des fonctions de sécurité intégrées pour protéger les documents, feuilles de calcul et présentations. Cela désactive certaines des options des menus d’Excel, Word et PowerPoint.
 
-### Restrictions pour Microsoft Office 2013, 2016 et 2019 {#restrictions-for-microsoft-office}
+### Restrictions pour Microsoft Office 2013, 2016 et 2019  {#restrictions-for-microsoft-office}
 
 Dans Microsoft Office, les options ci-après ne sont pas disponibles dans le cadre d’une session protégée :
 
@@ -71,7 +70,7 @@ Dans Microsoft Office, les options ci-après ne sont pas disponibles dans le cad
    * Fichier > Infos > Protéger le document > Ajouter une signature numérique
    * Fichier > Infos > Protéger le document > Marquer comme final
 
-### Ouverture d’un document protégé à partir de SharePoint Server {#opening-a-protected-document-from-sharepoint-server}
+### Ouverture d’un document protégé à partir de SharePoint Server  {#opening-a-protected-document-from-sharepoint-server}
 
 Ouverture du document protégé : si vous tentez d’ouvrir un document protégé dans Document Security Extension for Microsoft Office à partir de SharePoint Server sans ouvrir au préalable le programme Microsoft Office associé au type de fichier, comme Microsoft Word, Microsoft Excel ou Microsoft PowerPoint, le document risque de ne pas s’ouvrir. Un message d’erreur vous indique d’installer le plug-in approprié. Il est donc recommandé d’ouvrir le programme Microsoft Office associé avant d’ouvrir un document protégé dans Document Security Extension for Microsoft Office à partir de SharePoint Server.
 
@@ -79,11 +78,11 @@ Ouverture du document protégé : si vous tentez d’ouvrir un document protég
 
 Lorsque vous ouvrez un document protégé depuis SharePoint Server, toutes les autorisations du document sont désactivées, quelle que soit la stratégie appliquée.
 
-### Application d’une stratégie avec un filigrane dynamique à Microsoft Excel 2013, Microsoft Excel 2016 et Microsoft Excel 2019 sans qu’aucune imprimante ne soit installée {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
+### Application d’une stratégie avec un filigrane dynamique à Microsoft Excel 2013, Microsoft Excel 2016 et Microsoft Excel 2019 sans qu’aucune imprimante ne soit installée  {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
 Lorsque vous appliquez une stratégie avec filigrane dynamique à un fichier Excel 2013, 2016 et 2019 sur un ordinateur pour lequel aucune imprimante n’a été installée, puis que vous enregistrez le fichier, vous recevez le message d’erreur « Erreur interne lors de l’application du filigrane dynamique ». Cette erreur s’affiche également lorsque vous ouvrez de nouveau le fichier protégé. Le filigrane n’est pas appliqué et n’est pas visible depuis Afficher > Mise en page.
 
-### Désactivation de la prévention de l’exécution des données Windows pour les applications Office prises en charge {#disable-windows-data-execution-prevention-for-supported-office-applications}
+### Désactivation de la prévention de l’exécution des données Windows pour les applications Office prises en charge  {#disable-windows-data-execution-prevention-for-supported-office-applications}
 
 Il est recommandé de désactiver le paramètre Windows Data Execution Prevention (DEP) lors de l’utilisation des applications Document Security Extension for Microsoft Office.
 
@@ -95,11 +94,11 @@ Quand vous protégez un fichier Microsoft Office partagé à l’aide de Documen
 
 Pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
 
-### Installation de Document Security Extension for Microsoft Office sur un ordinateur doté de Microsoft Office dans une langue non prise en charge {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
+### Installation de Document Security Extension for Microsoft Office sur un ordinateur doté de Microsoft Office dans une langue non prise en charge  {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
 
 Avant d’installer Document Security Extension for Microsoft Office sur un ordinateur où une application Microsoft Office est installée dans une langue non prise en charge, vous devez ouvrir l’application Office au moins une fois.
 
-### Le bouton Synchronisation hors connexion est activé même lorsque l’utilisateur ne dispose pas d’autorisations hors connexion {#synchronize-offline-button-is-enabled-even-when-a-user-does-not-have-offline-permissions}
+### Le bouton Synchronisation hors connexion est activé même lorsque l’utilisateur ne dispose pas d’autorisations hors connexion  {#synchronize-offline-button-is-enabled-even-when-a-user-does-not-have-offline-permissions}
 
 Le bouton de synchronisation pour un accès hors connexion est disponible, même lorsque l’utilisateur ne dispose pas d’autorisations hors connexion pour le document. Toutefois, ce bouton est inopérant.
 
@@ -119,7 +118,7 @@ Si une cellule d’un document Microsoft Excel contient une image ou est remplie
 
 Si plusieurs certificats sont présents sur l’ordinateur client et que l’utilisateur annule la boîte de dialogue de sélection de certificat, la boîte de dialogue s’affiche de nouveau et l’utilisateur doit annuler la boîte de dialogue deux fois.
 
-### Microsoft PowerPoint permet de modifier les documents protégés {#microsoft-powerpoint-allows-editing-protected-documents}
+### Microsoft PowerPoint permet de modifier les documents protégés  {#microsoft-powerpoint-allows-editing-protected-documents}
 
 Lors d’une tentative de modification d’un document protégé, Microsoft PowerPoint affiche le message « Vous n’êtes pas autorisé à modifier ce document. Vous ne pourrez pas enregistrer vos modifications. ». Après la fermeture du message, les utilisateurs peuvent continuer à ajouter du texte ou à modifier le document. Toutefois, les modifications apportées aux documents protégés ne sont pas enregistrées.
 
