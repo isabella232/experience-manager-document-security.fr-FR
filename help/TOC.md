@@ -9,10 +9,9 @@ breadcrumb-title: Guide de sécurité des documents
 user-guide-description: Document Security Extension for Microsoft® Office garantit que seules les personnes autorisées peuvent utiliser des fichiers Word, Excel et PowerPoint contenant votre propriété intellectuelle.
 feature: Document Security
 role: Business Practitioner
-translation-type: ht
 source-git-commit: 7be2b17e7685a391dcccde2cc008802b5773cadf
-workflow-type: ht
-source-wordcount: '102'
+workflow-type: tm+mt
+source-wordcount: '99'
 ht-degree: 100%
 
 ---
