@@ -6,9 +6,8 @@ content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 100%
 
@@ -42,7 +41,7 @@ Après application d’une stratégie à un fichier, les paramètres de confiden
 
 Si l’utilisation hors connexion est autorisée par la stratégie, les destinataires peuvent également utiliser les fichiers protégés par la stratégie hors connexion (sans liaison avec Internet ou le réseau) pendant la période spécifiée dans la stratégie.
 
-## Fonctionnement des fichiers protégés par une stratégie {#how-policy-protected-files-work}
+## Fonctionnement des fichiers protégés par une stratégie  {#how-policy-protected-files-work}
 
 Pour qu’un utilisateur puisse ouvrir et manipuler les fichiers Word, Excel et PowerPoint protégés par une stratégie, cette stratégie doit le désigner comme destinataire ou lui autoriser un accès anonyme, et il doit avoir installé Document Security Extension for Microsoft Office. Pour communiquer un fichier protégé par une stratégie à une personne qui ne possède pas Document Security Extension for Microsoft Office, procurez-lui une copie du logiciel ou expliquez-lui comment le télécharger sur votre site Web. Si vous ne disposez pas du programme d’installation, vous pouvez le télécharger à partir de la [page des téléchargements](https://www.adobe.com/fr/products/livecycle/rightsmanagement/extension/downloads.html).
 
