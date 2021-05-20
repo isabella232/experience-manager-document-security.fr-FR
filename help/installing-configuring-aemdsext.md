@@ -6,9 +6,8 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 100%
 
@@ -248,7 +247,7 @@ Si l’option Application automatique de la stratégie est activée, tous les do
 
 Pour plus d’informations sur la configuration de la fonction d’application automatique de la stratégie, voir [Configuration d’une application automatique de la stratégie par défaut](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
 
-## Activation de l’interface utilisateur sans ruban {#enable-ribbon-less-user-interface}
+## Activation de l’interface utilisateur sans ruban  {#enable-ribbon-less-user-interface}
 
 Vous pouvez activer/désactiver l’interface utilisateur sans ruban en modifiant les paramètres dans le registre Windows. Effectuez les étapes suivantes pour mettre le registre à jour et activer l’interface utilisateur sans ruban :
 
@@ -260,11 +259,11 @@ Vous pouvez activer/désactiver l’interface utilisateur sans ruban en modifian
 
 1. Fermez l’éditeur du registre.
 
-## Activation du filigrane pour impression dans Microsoft Excel {#enable-watermark-for-printing-in-microsoft-excel}
+## Activation du filigrane pour impression dans Microsoft Excel  {#enable-watermark-for-printing-in-microsoft-excel}
 
 Vous pouvez modifier les paramètres du registre Windows pour que le filigrane dynamique coexiste avec les en-têtes et pieds de page existants. Les paramètres du registre rendent le filigrane disponible uniquement pendant l’impression. Effectuez les étapes suivantes pour mettre le registre à jour et activer les filigranes pour impression :
 
-1. Effectuez une sauvegarde du registre Windows avant d’apporter des modifications. Pour obtenir des instructions détaillées, consultez [Comment modifier le registre Windows](https://support.microsoft.com/fr-fr/kb/136393).
+1. Effectuez une sauvegarde du registre Windows avant d’apporter des modifications. Pour obtenir des instructions détaillées, consultez [Comment modifier le registre Windows](https://support.microsoft.com/en-us/kb/136393).
 1. Dans l’éditeur du registre, accédez à HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 ou HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. Créez une nouvelle clé de registre **WatermarkMode**.
 1. Dans la clé de registre WatermarkMode, créez un DWORD **WatermarkMode**, et réglez la valeur de DWORD **WatermarkMode** sur **1**.
@@ -279,7 +278,7 @@ Vous pouvez modifier les paramètres du registre Windows pour que le filigrane d
 
 Un utilisateur peut tenter d’ouvrir un document protégé sur un ordinateur sur lequel AEM Document Security for Microsoft Office n’est pas installé. Ces machines ne peuvent pas ouvrir le document. Sur ces machines, vous pouvez afficher une page de garde contenant des instructions pour télécharger le module externe AEM Document Security for Microsoft Office et d’autres informations.
 
-### Avant de configurer une page de garde {#before-you-configure-a-cover-page}
+### Avant de configurer une page de garde  {#before-you-configure-a-cover-page}
 
 * Effectuez une sauvegarde du fichier CommonResources.dll. Le chemin par défaut est :
 
@@ -331,7 +330,7 @@ Le fichier CommonResources.dll contient des informations sur les modèles de res
  </tbody>
 </table>
 
-#### Configuration du modèle en tant que page de garde {#configure-the-template-as-a-cover-page}
+#### Configuration du modèle en tant que page de garde  {#configure-the-template-as-a-cover-page}
 
 1. Ouvrez Microsoft Visual Studio. Recherchez et ouvrez le fichier CommonResources.dll pour le modifier.
 
