@@ -7,9 +7,8 @@ content-type: reference
 topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
-translation-type: ht
 source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 100%
 
@@ -39,6 +38,6 @@ Pour plus d’informations sur LoadBehavior, consultez l’article [Entrées du 
 
 Cette section aborde les problèmes qui pourraient survenir avec votre installation d’AEM Document Security Extension.
 
-### Les applications Microsoft Office ne se lancent pas correctement après l’installation de Document Security Extension {#microsoft-office-applications-dont-start-smoothly-on-installing-document-security-extension}
+### Les applications Microsoft Office ne se lancent pas correctement après l’installation de Document Security Extension  {#microsoft-office-applications-dont-start-smoothly-on-installing-document-security-extension}
 
 Pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security Extension et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
