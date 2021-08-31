@@ -6,14 +6,14 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: a15d49cdd21ccb8e6ec6c770a92bf16cb24ffaa1
+source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
 workflow-type: tm+mt
-source-wordcount: '2796'
-ht-degree: 100%
+source-wordcount: '2764'
+ht-degree: 99%
 
 ---
 
-# Installation et configuration d’AEM Document Security Extension for Microsoft Office {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
+# Installation et configuration d’AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 Ce document vous guide pour l’installation et la configuration d’Adobe Experience Manager Document Security Extension for Microsoft Office.
 
@@ -40,7 +40,7 @@ Avant l’installation de Document Security Extension for Microsoft Office, assu
 >
 >L’installation d’une version en 32 bits de Document Security Extension sur un système d’exploitation en 64 bits est prise en charge mais l’opposé n’est pas pris en charge. Vous ne pouvez pas installer une version 64 bits de Document Security Extension for Microsoft Office sur un système d’exploitation en 32 bits.
 
-### Désactivation de McAfee VirusScan {#disable-mcafee-virusscan}
+### Désactivation de McAfee VirusScan  {#disable-mcafee-virusscan}
 
 Pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security Extension et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
 
@@ -103,7 +103,13 @@ Les étapes suivantes décrivent comment créer et configurer un fichier MSI. Ce
 
 ### Conditions préalables pour la personnalisation du programme d’installation {#prerequisites-for-customizing-the-installer}
 
-Utilisez l’éditeur de base de données Orca pour personnaliser le programme d’installation. Les étapes suivantes décrivent comment créer un fichier MSI personnalisé en modifiant une copie du fichier d’installation MSI à l’aide de l’éditeur de base de données Orca. Orca est disponible dans le Kit de développement Microsoft Windows SDK pour Windows Server 2008 et dans .NET Framework 3.5. Pour plus d’informations sur la modification des fichiers de Microsoft Windows® Installer à l’aide d’Orca, reportez-vous au [Support Microsoft](http://support.microsoft.com/kb/255905/EN-US/).
+Utilisez l’éditeur de base de données Orca pour personnaliser le programme d’installation. Les étapes suivantes décrivent comment créer un fichier MSI personnalisé en modifiant une copie du fichier d’installation MSI à l’aide de l’éditeur de base de données Orca. Orca est disponible dans le cadre du SDK Windows pour Windows Server 2008 et .NET Framework 3.5.
+
+<!--
+
+For more information about how to edit Microsoft Windows® Installer files using Orca, see [Microsoft Support](http://support.microsoft.com/kb/255905/EN-US/).
+
+-->
 
 >[!NOTE]
 >
@@ -111,7 +117,7 @@ Utilisez l’éditeur de base de données Orca pour personnaliser le programme d
 
 #### Installation d’Orca {#install-orca}
 
-1. Téléchargez le Kit de développement Microsoft Windows SDK pour Windows Server 2008 et .NET Framework 3.5 depuis le [Centre de téléchargement Microsoft](http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11310).
+1. Téléchargez le SDK Windows pour Windows Server 2008 et .NET Framework 3.5.
 1. Double-cliquez sur le fichier Orca.msi dans le dossier \Microsoft SDK\bin.
 
    Vous avez également besoin de la variante MSI du fichier d’installation. Contactez l’assistance d’Adobe pour recevoir la dernière version du programme d’installation MSI.
@@ -179,7 +185,7 @@ Après avoir activé la fonction d’application automatique de la stratégie, l
 * L’utilisateur modifie et enregistre un document non protégé.
 * L’utilisateur lance une application qui s’ouvre avec un document par défaut, modifie, puis enregistre le document.
 
-### Configuration de la fonction d’application automatique de la stratégie dans le fichier MSI {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### Configuration de la fonction d’application automatique de la stratégie dans le fichier MSI  {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 Avant de commencer, préconfigurez le programme d’installation pour qu’il fasse référence au serveur LiveCycle ou AEM forms, comme décrit précédemment dans cet article.
 
@@ -247,7 +253,7 @@ Si l’option Application automatique de la stratégie est activée, tous les do
 
 Pour plus d’informations sur la configuration de la fonction d’application automatique de la stratégie, voir [Configuration d’une application automatique de la stratégie par défaut](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
 
-## Activation de l’interface utilisateur sans ruban  {#enable-ribbon-less-user-interface}
+## Activation de l’interface utilisateur sans ruban {#enable-ribbon-less-user-interface}
 
 Vous pouvez activer/désactiver l’interface utilisateur sans ruban en modifiant les paramètres dans le registre Windows. Effectuez les étapes suivantes pour mettre le registre à jour et activer l’interface utilisateur sans ruban :
 
@@ -259,7 +265,7 @@ Vous pouvez activer/désactiver l’interface utilisateur sans ruban en modifian
 
 1. Fermez l’éditeur du registre.
 
-## Activation du filigrane pour impression dans Microsoft Excel  {#enable-watermark-for-printing-in-microsoft-excel}
+## Activation du filigrane pour impression dans Microsoft Excel {#enable-watermark-for-printing-in-microsoft-excel}
 
 Vous pouvez modifier les paramètres du registre Windows pour que le filigrane dynamique coexiste avec les en-têtes et pieds de page existants. Les paramètres du registre rendent le filigrane disponible uniquement pendant l’impression. Effectuez les étapes suivantes pour mettre le registre à jour et activer les filigranes pour impression :
 
@@ -278,7 +284,7 @@ Vous pouvez modifier les paramètres du registre Windows pour que le filigrane d
 
 Un utilisateur peut tenter d’ouvrir un document protégé sur un ordinateur sur lequel AEM Document Security for Microsoft Office n’est pas installé. Ces machines ne peuvent pas ouvrir le document. Sur ces machines, vous pouvez afficher une page de garde contenant des instructions pour télécharger le module externe AEM Document Security for Microsoft Office et d’autres informations.
 
-### Avant de configurer une page de garde  {#before-you-configure-a-cover-page}
+### Avant de configurer une page de garde {#before-you-configure-a-cover-page}
 
 * Effectuez une sauvegarde du fichier CommonResources.dll. Le chemin par défaut est :
 
@@ -330,7 +336,7 @@ Le fichier CommonResources.dll contient des informations sur les modèles de res
  </tbody>
 </table>
 
-#### Configuration du modèle en tant que page de garde  {#configure-the-template-as-a-cover-page}
+#### Configuration du modèle en tant que page de garde {#configure-the-template-as-a-cover-page}
 
 1. Ouvrez Microsoft Visual Studio. Recherchez et ouvrez le fichier CommonResources.dll pour le modifier.
 
@@ -357,7 +363,7 @@ Le fichier CommonResources.dll contient des informations sur les modèles de res
    >
    >Ne supprimez pas et n’ajoutez pas des types de ressource de manière aléatoire. Après 101, configurez 102, etc.
 
-### Personnalisation du fichier CommonResources.dll avec le programme d’installation d’AEM Document Security extension for Microsoft Office {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
+### Personnalisation du fichier CommonResources.dll avec le programme d’installation d’AEM Document Security extension for Microsoft Office   {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
 Vous pouvez personnaliser le fichier CommonResources.dll pour inclure l’ajout d’une page de garde personnalisée. Après avoir personnalisé le fichier, vous pouvez remplacer manuellement le fichier d’origine par le fichier personnalisé sur tous les postes de travail ou vous pouvez choisir une méthode automatisée pour remplacer le fichier.
 
