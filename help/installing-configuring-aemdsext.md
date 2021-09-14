@@ -7,9 +7,9 @@ topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2764'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Avant l’installation de Document Security Extension for Microsoft Office, assu
 >
 >L’installation d’une version en 32 bits de Document Security Extension sur un système d’exploitation en 64 bits est prise en charge mais l’opposé n’est pas pris en charge. Vous ne pouvez pas installer une version 64 bits de Document Security Extension for Microsoft Office sur un système d’exploitation en 32 bits.
 
-### Désactivation de McAfee VirusScan  {#disable-mcafee-virusscan}
+### Désactivation de McAfee VirusScan {#disable-mcafee-virusscan}
 
 Pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security Extension et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
 
@@ -269,7 +269,7 @@ Vous pouvez activer/désactiver l’interface utilisateur sans ruban en modifian
 
 Vous pouvez modifier les paramètres du registre Windows pour que le filigrane dynamique coexiste avec les en-têtes et pieds de page existants. Les paramètres du registre rendent le filigrane disponible uniquement pendant l’impression. Effectuez les étapes suivantes pour mettre le registre à jour et activer les filigranes pour impression :
 
-1. Effectuez une sauvegarde du registre Windows avant d’apporter des modifications. Pour obtenir des instructions détaillées, consultez [Comment modifier le registre Windows](https://support.microsoft.com/en-us/kb/136393).
+1. Effectuez une sauvegarde du registre Windows avant d’apporter des modifications. Pour obtenir des instructions détaillées, consultez [Comment modifier le registre Windows](https://support.microsoft.com/fr-fr/kb/136393).
 1. Dans l’éditeur du registre, accédez à HKEY_CURRENT_USER\Software\Adobe\LiveCycle Rights Management ES4\11.0.0 ou HKEY_LOCAL_MACHINE\WOW6432NODE\Software\Adobe\LiveCycle Rights Management ES4\11.0.0
 1. Créez une nouvelle clé de registre **WatermarkMode**.
 1. Dans la clé de registre WatermarkMode, créez un DWORD **WatermarkMode**, et réglez la valeur de DWORD **WatermarkMode** sur **1**.
@@ -363,7 +363,7 @@ Le fichier CommonResources.dll contient des informations sur les modèles de res
    >
    >Ne supprimez pas et n’ajoutez pas des types de ressource de manière aléatoire. Après 101, configurez 102, etc.
 
-### Personnalisation du fichier CommonResources.dll avec le programme d’installation d’AEM Document Security extension for Microsoft Office   {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
+### Personnalisation du fichier CommonResources.dll avec le programme d’installation d’AEM Document Security extension for Microsoft Office  {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
 Vous pouvez personnaliser le fichier CommonResources.dll pour inclure l’ajout d’une page de garde personnalisée. Après avoir personnalisé le fichier, vous pouvez remplacer manuellement le fichier d’origine par le fichier personnalisé sur tous les postes de travail ou vous pouvez choisir une méthode automatisée pour remplacer le fichier.
 
