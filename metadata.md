@@ -1,12 +1,14 @@
 ---
 cloud: Experience Cloud
+solution: Experience Manager, Experience Manager Forms
+product: adobe experience manager
+type: Documentation
 feature-set: Experience Manager Forms
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-document-security.fr-FR
 index: true
-translation-type: ht
-source-git-commit: 7be2b17e7685a391dcccde2cc008802b5773cadf
-workflow-type: ht
+source-git-commit: f8c8ec57aa5966b4b55ad782d8fdf0a156de25c4
+workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
 
@@ -21,7 +23,7 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui tr
 |--- |--- |
 | solution-title | Utilisé dans l’en-tête de l’article en tant que lien. |
 | solution-hub-url | Ouvre la page hub helpx. |
-| solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté |
+| solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté. |
 | getting-started-url | Lien vers la page de démarrage helpx. |
 | tutorials-url | Lien vers les tutoriels vidéo : tutoriels helpx ou KT. |
 | mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2. |
