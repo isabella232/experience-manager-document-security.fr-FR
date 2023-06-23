@@ -6,9 +6,9 @@ contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 93%
 * Versions 32 bits ou 64 bits de Microsoft® Windows 7 ou Windows 10
 * Remarque : Document Security Extension for Microsoft® Office est également prévu pour fonctionner sur des appareils Microsoft® Surface.
 * Versions 32 bits ou 64 bits de Microsoft Office® 2013, 2016, 2019 ou applications de bureau Microsoft® Office installées dans le cadre d’Office 365
-* Processeur 1,3 GHz ou supérieur
-* 2 Go de mémoire vive
-* 100 Mo d’espace disque disponible
+* Processeur 1,3 GHz ou supérieur
+* 2 Go de RAM
+* 100 Mo d’espace disque disponible
 
 ## Télécharger le programme d’installation {#download-installer}
 
