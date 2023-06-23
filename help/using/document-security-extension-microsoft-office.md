@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1313'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Document Security Extension for Microsoft® Office étend la protection des mod
 
 ## Protection de la propriété intellectuelle à l’aide de Document Security {#how-document-security-protects-intellectual-property}
 
-Document Security garantit que seules les personnes autorisées peuvent utiliser les fichiers contenant votre propriété intellectuelle. Grâce à Document Security, vous pouvez protéger les fichiers en appliquant des politiques de confidentialité. A *policy* est un ensemble d’informations qui comprend des paramètres de confidentialité et une liste d’utilisateurs autorisés. Les paramètres spécifiés dans une politique déterminent dans quelle mesure un destinataire peut utiliser un fichier auquel vous appliquez cette politique. Vous pouvez par exemple indiquer si les destinataires peuvent imprimer ou copier du texte ou enregistrer des modifications.
+Document Security garantit que seules les personnes autorisées peuvent utiliser les fichiers contenant votre propriété intellectuelle. Grâce à Document Security, vous pouvez protéger les fichiers en appliquant des politiques de confidentialité. Une *politique* recense des informations telles que les paramètres de confidentialité et la liste de personnes utilisatrices autorisées. Les paramètres spécifiés dans une politique déterminent dans quelle mesure un destinataire peut utiliser un fichier auquel vous appliquez cette politique. Vous pouvez par exemple indiquer si les destinataires peuvent imprimer ou copier du texte ou enregistrer des modifications.
 
 Les administrateurs et les utilisateurs de Document Security créent des politiques. Les administrateurs créent des politiques organisationnelles accessibles à tous les utilisateurs autorisés. Les administrateurs ou coordinateurs de politiques peuvent également créer des groupes de politiques appelés *jeux de politiques* mis à la disposition d’un sous-ensemble d’utilisateurs. Les utilisateurs peuvent créer leurs propres politiques, qu’eux seuls peuvent utiliser. Les administrateurs, les coordinateurs de politiques et les utilisateurs créent des politiques à l’aide des pages web Document Security.
 
@@ -68,20 +68,20 @@ En travaillant avec l’entreprise candidate retenue, les ingénieurs et ingéni
 
 ## Informations supplémentaires {#additional-information}
 
-Les ressources de ce tableau peuvent vous aider à en savoir plus sur AEM Document Security :
+Pour en savoir plus sur Document Security d’AEM, consultez les ressources présentées dans le tableau ci-dessous :
 
 <table >
  <tbody>
   <tr>
-   <th><p>Pour plus d’informations sur</p> </th>
+   <th><p>Pour obtenir des informations sur</p> </th>
    <th><p>Voir</p> </th>
   </tr>
   <tr>
-   <td><p>Aide à l’administrateur d’AEM forms</p> </td>
+   <td><p>Aide destinée à l’administration d’AEM Forms</p> </td>
    <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/get-started/configure-general-aem-forms-settings.html?lang=fr">Aide à l’administrateur</a> ou, dans les pages administratives de Document Security, cliquez sur le lien Aide dans le coin supérieur droit d’une page.</p> </td>
   </tr>
   <tr>
-   <td><p>Mises à jour des correctifs, notes techniques et informations supplémentaires sur cette version du produit</p> </td>
+   <td><p>Mises à jour des correctifs, notes techniques et informations supplémentaires sur cette version du produit.</p> </td>
    <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=fr#support">Support technique d’Experience Cloud</a></p> </td>
   </tr>
  </tbody>
