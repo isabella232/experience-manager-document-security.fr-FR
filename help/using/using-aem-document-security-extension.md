@@ -1,15 +1,15 @@
 ---
 title: Utiliser AEM Document Security Extension for Microsoft® Office
-description: Vous pouvez contrôler la manière dont les destinataires utilisent vos fichiers protégés par une stratégie, quelle que soit la diffusion que vous leur fournissez. Le document explique comment protéger les fichiers et utiliser des fichiers protégés.
+description: Vous pouvez contrôler l’utilisation que font les destinataires de vos fichiers protégés, quelle que soit la portée de leur diffusion. Le document décrit comment protéger les fichiers et utiliser des fichiers protégés.
 uuid: db4abbc8-eb21-4f4a-9950-224ada95ce66
 content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6231'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 
 ## Protection des fichiers avec AEM Document Security Extension {#usingaemdocumentsecurityextensiontoprotectfiles}
 
-Vous pouvez contrôler la manière dont les destinataires utilisent vos fichiers protégés par une stratégie, quelle que soit la diffusion que vous leur fournissez.
+Vous pouvez contrôler l’utilisation que font les destinataires de vos fichiers protégés, quelle que soit la portée de leur diffusion.
 
 Lorsque vous utilisez Document Security Extension for Microsoft® Office, vous pouvez effectuer les tâches suivantes :
 
@@ -62,7 +62,7 @@ Si vous devez accéder aux pages web de Document Security par authentification 
 
    **Nom d’utilisateur et mot de passe**
 
-   Saisissez le nom d’utilisateur et le mot de passe reçus de l’administrateur Document Security.
+   Saisissez le nom d’utilisateur et le mot de passe reçus de l’administration de Document Security.
 
    **Authentification par certificat**
 
@@ -87,24 +87,24 @@ Si vous ne pouvez pas vous connecter à Document Security, un message s’affic
 
 ### Utilisation de fournisseurs d’authentification tiers {#using-third-party-authentication-providers}
 
-Vous pouvez utiliser des fournisseurs d’authentification tiers avec AEM Forms Document Security. Ces fournisseurs d’authentification vous permettent d’ajouter un niveau d’accès supplémentaire aux documents protégés. AEM Forms Document Security prend en charge les processus d’authentification étendue suivants :
+Vous pouvez utiliser des fournisseurs d’authentification tiers avec AEM Forms Document Security. Ces fournisseurs d’authentification vous permettent d’ajouter un niveau d’accès supplémentaire aux documents protégés. Document Security d’AEM Forms prend en charge les workflows d’authentification étendue suivants :
 
 * Authentification étendue à l’aide de l’URL d’AEM Forms par défaut
 * Authentification étendue à l’aide d’une URL personnalisée
-* Processus d’authentification étendue par défaut avec les fournisseurs d’identité tiers configurés sur le serveur AEM Forms on JEE
-* Processus d’authentification étendue personnalisée avec des fournisseurs d’identité tiers configurés sur le serveur AEM Forms on JEE
-* Authentification étendue à l’aide d’une page personnalisée pour répertorier les authentifications SAML
+* Workflow d’authentification étendue par défaut avec les fournisseurs tiers d’identité configurés sur le serveur JEE d’AEM Forms
+* Workflow d’authentification étendue personnalisé avec les fournisseurs tiers d’identité configurés sur le serveur JEE d’AEM Forms
+* Authentification étendue à l’aide de la page personnalisée pour répertorier les authentifications SAML
 
 #### Authentification étendue à l’aide de l’URL d’AEM Forms par défaut {#extended-authentication-using-default-aem-forms-url}
 
-Vous pouvez utiliser l’URL AEM Forms par défaut pour l’authentification étendue. La page de destination par défaut contient l’identité graphique d’Adobe. De plus, les paramètres AEM Forms par défaut sont utilisés lors de l’utilisation de l’URL AEM Forms par défaut pour l’authentification étendue.
+Vous pouvez utiliser l’URL d’AEM Forms par défaut pour l’authentification étendue. La page de destination par défaut contient l’identité graphique d’Adobe. De plus, les paramètres d’AEM Forms par défaut sont utilisés lors de l’utilisation de l’URL d’AEM Forms par défaut pour l’authentification étendue.
 
-Effectuez les étapes suivantes pour activer l’authentification étendue avec l’URL d’entrée d’Adobe par défaut :
+Effectuez la procédure suivante pour activer l’authentification étendue à l’aide de l’URL d’accueil Adobe par défaut :
 
-1. Ouvrez l’interface utilisateur d’administration d’AEM Forms.
+1. Ouvrez l’interface utilisateur d’administration d’AEM Forms.
 1. Accédez à Services > Document Security > Configuration > Configuration du serveur.
-1. Activez l’option Autoriser l’authentification étendue .
-1. Indiquez l’URL par défaut URL d’entrée de l’authentification étendue. L’URL par défaut est http://localhost:8080/edc/extendedauthentication/welcome.jsp.
+1. Activez l’option Autoriser l’authentification étendue.
+1. Indiquez l’URL d’accueil par défaut de l’authentification étendue. L’URL par défaut est http://localhost:8080/edc/extendedauthentication/welcome.jsp.
 
    Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -117,27 +117,27 @@ Effectuez les étapes suivantes pour activer l’authentification étendue avec 
 
 #### Authentification étendue avec une URL d’accueil personnalisée {#extended-authentication-with-a-custom-landing-url}
 
-Vous pouvez utiliser une URL personnalisée pour l’authentification étendue. Il offre la possibilité d’afficher une page d’authentification personnalisée avec une valorisation de marque personnalisée. Par exemple, l’identité graphique de votre entreprise.
+Vous pouvez indiquer une URL personnalisée pour l’authentification étendue. Vous pouvez ainsi afficher une page d’authentification personnalisée reflétant votre stratégie de marque. Par exemple, les logos, polices et couleurs associés à votre organisation.
 
-Vous pouvez inclure la page d’authentification personnalisée dans un fichier war et déployer le fichier war sur le serveur AEM Forms. Le fichier war contient une logique complète pour accepter les informations d’identification des utilisateurs et utilisatrices et les authentifier sur le serveur AEM Forms. La page d’authentification personnalisée d’AEM Forms Document Security requiert les éléments suivants :
+Vous pouvez inclure la page d’authentification personnalisée dans un fichier war et déployer le fichier war sur le serveur AEM Forms. Le fichier war contient une logique complète pour accepter les informations d’identification des utilisateurs et utilisatrices et les authentifier sur le serveur AEM Forms. La page d’authentification personnalisée pour Document Security d’AEM Forms doit répondre aux spécifications suivantes :
 
-* La page d’authentification doit envoyer le nom d’utilisateur sous la forme j_username et le mot de passe sous la forme j_password. La page doit également envoyer source_url et login_url en tant que paramètres masqués.
+* La page d’authentification doit envoyer le nom d’utilisateur sous la forme « j_nomd’utilisateur » et le mot de passe sous la forme « j_motdepasse ». La page doit également envoyer « source_url » et « login_url » en tant que paramètres masqués.
 * Une fois l’authentification réussie, la page doit se fermer automatiquement.
 
 Pour activer l’authentification étendue avec une URL d’accueil personnalisée :
 
 1. Déployez le fichier war d’authentification personnalisée sur le serveur AEM Forms.
-1. Ouvrez l’interface utilisateur d’administration d’AEM Forms.
+1. Ouvrez l’interface utilisateur d’administration d’AEM Forms.
 1. Accédez à Services > Document Security > Configuration > Configuration du serveur.
-1. Activez l’option Autoriser l’authentification étendue et spécifiez l’URL d’entrée d’authentification étendue personnalisée.
+1. Activez l’option Autoriser l’authentification étendue et indiquez l’URL d’accueil personnalisée de l’authentification étendue.
 1. Ajoutez les entrées suivantes au fichier config.xml sous le nœud SSO après l’entrée *&lt;node name=&quot;AllowedUrls&quot;>* :
 
    >[!NOTE]
    &lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>!!discoiqbr!!&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>!!discoiqbr!!&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>!!discoiqbr!!
 
-   Pour obtenir des informations détaillées sur la mise à jour du fichier config.xml, voir [Modification manuelle du fichier de configuration de Document Security](https://helpx.adobe.com/fr/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file).
+   Pour suivre la procédure de mise à jour du fichier config.xml, consultez la section [Modifier manuellement le fichier de configuration de Document Security](https://helpx.adobe.com/fr/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file).
 
-   Désormais, AEM Forms Document Security est configuré pour utiliser l’authentification étendue avec une URL d’entrée personnalisée.
+   Document Security d’AEM Forms est désormais configuré pour utiliser l’authentification étendue à l’aide d’une URL d’accueil AEM Forms par défaut.
 
 #### Processus d’authentification étendue par défaut avec les fournisseurs tiers d’identité configurés sur le serveur AEM Forms {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
 
@@ -162,7 +162,7 @@ Vous pouvez également afficher une page personnalisée pour inclure tous les fo
 
 1. Incluez la page d’authentification personnalisée dans un fichier war et déployez le fichier war sur le serveur AEM Forms. Le fichier war contient une logique complète pour accepter les informations d’identification des utilisateurs et utilisatrices et les authentifier sur le serveur AEM Forms.
 1. Ouvrez l’interface d’administration d’AEM Forms et accédez à **[!UICONTROL Paramètres]** > **[!UICONTROL Gestion des utilisateurs]** > **[!UICONTROL Configuration]** > **[!UICONTROL Paramètres du fournisseur de services SAML]**.
-1. Ajoutez ce qui suit au champ Propriétés personnalisées et cliquez sur **[!UICONTROL Enregistrer]**.
+1. Ajoutez l’élément suivant au champ Propriétés personnalisées et cliquez sur **[!UICONTROL Enregistrer]**.
 
    *saml.sp.discovery.url=/demoJSP/saml_discovery.jsp*
 
@@ -178,15 +178,15 @@ Si vous n’avez pas encore de compte Document Security, Document Security peut 
 Après vous être enregistré et avoir activé votre compte, vous pouvez utiliser les fichiers protégés par une politique pour lesquels vous disposez d’une autorisation.
 
 >[!NOTE]
-Si vous recevez un fichier protégé par une stratégie et que vous ne disposez pas d’un compte Document Security, ou si vous recevez une invitation à vous enregistrer, contactez la personne qui vous a envoyé le fichier pour obtenir de l’aide.
+Si vous recevez un fichier protégé par une politique et que vous ne disposez pas d’un compte Document Security, ou si vous recevez une invitation à vous enregistrer, contactez la personne qui vous a envoyé le fichier pour obtenir de l’aide.
 
-Si vous recevez une invitation à vous enregistrer par email à l’aide de Document Security, vous pouvez vous enregistrer à l’aide de l’URL indiquée pour ouvrir la page d’enregistrement en ligne. Une fois enregistré, vous recevrez un deuxième avis sur l’activation de votre compte.
+Si vous recevez une invitation à vous enregistrer par email à l’aide de Document Security, vous pouvez vous enregistrer à l’aide de l’URL indiquée pour ouvrir la page d’enregistrement en ligne. Une fois enregistré, vous recevrez un second e-mail concernant l’activation de votre compte.
 
 #### Obtention d’un compte utilisateur externe {#obtain-an-external-user-account}
 
 1. Ouvrez l’email d’inscription de Document Security. L’URL contenue dans le message est un lien vers la page d’enregistrement des utilisateurs externes de Document Security. Si vous ne recevez pas de message d’enregistrement, contactez la personne qui vous a adressé le dossier pour obtenir de l’aide.
 1. Cliquez sur l’URL ou copiez-la et collez-la dans votre navigateur.
-1. Entrez votre nom, votre organisation et votre mot de passe dans les zones appropriées. Votre mot de passe peut être n’importe quelle combinaison de huit caractères.
+1. Entrez votre nom, votre organisation et votre mot de passe dans les zones appropriées. Votre mot de passe peut constituer n’importe quelle combinaison de huit caractères.
 
    >[!NOTE]
    Veillez à choisir un mot de passe facile à retenir ; aucune méthode n’est proposée pour rechercher des mots de passe oubliés.
@@ -281,7 +281,7 @@ Certains des paramètres disponibles pour la création de politiques dans les pa
    <td><p>Pris en charge.</p></td>
   </tr>
   <tr>
-   <td><p>Fournisseurs d’autorisation externes</p></td>
+   <td><p>Fournisseurs d’autorisations externes</p></td>
    <td><p>Pris en charge.</p></td>
   </tr>
  </tbody>
@@ -324,7 +324,7 @@ Pour plus d’informations sur la création et la gestion des politiques, voir [
 
 Vous pouvez appliquer les politiques disponibles à un fichier, y compris celles que vous avez créées et celles qui font partie de jeux de politiques auxquels vous avez accès. Avant d’appliquer une politique, vous devez enregistrer le fichier.
 
-Une fois une stratégie appliquée, elle est ajoutée à la liste Récemment utilisées du menu AEM Document Security afin de vous permettre d’appliquer plus facilement vos stratégies les plus fréquemment utilisées. Si vous utilisez plusieurs instances de Document Security, la liste Récemment utilisées affiche les stratégies uniquement pour le serveur auquel vous êtes connecté ou pour votre serveur par défaut si vous ne vous êtes pas encore connecté à une instance de Document Security.
+Une fois la politique appliquée, elle est ajoutée à la liste des éléments récemment utilisés du menu Document Security d’AEM. Vous pouvez ainsi appliquer rapidement les politiques coutumières. Si vous utilisez plusieurs instances Document Security, la liste des éléments récemment utilisés affiche les politiques exclusives au serveur auquel vous êtes actuellement connecté ou pour votre serveur par défaut si vous ne vous êtes pas encore connecté à une instance Document Security.
 
 >[!NOTE]
 Vous pouvez appliquer des stratégies uniquement aux fichiers de documents Word (.doc, également .docx et .docm dans Microsoft® Office 2010 et 2013), de classeurs Excel (.xls, également .xlsx et .xlsm dans Microsoft® Office 2010 et 2013) et de présentations PowerPoint (.ppt, également .pptx et .pptm dans Microsoft® 2010 et 2013). Vous ne pouvez pas appliquer de stratégies aux fichiers de modèle Word (.dot), aux fichiers de modèle Excel (.xlt) ni aux fichiers de modèle de conception PowerPoint (.pot).
@@ -349,7 +349,7 @@ Les fichiers protégés par une stratégie contiennent la propriété intellectu
 
 Vous pouvez utiliser des fichiers protégés par une stratégie, que voua apparteniez ou non à l’entreprise de l’éditeur ou de l’éditrice des fichiers. Pour ouvrir des fichiers protégés par une politique, vous devez être reconnu par Document Security, soit via l’insertion dans une liste LDAP ou Active Directory liée, en étant ajouté comme utilisateur local de LiveCycle ou d’AEM forms on JEE, soit en vous enregistrant auprès de Document Security après avoir été invité en tant qu’utilisateur.
 
-Si vous recevez un fichier protégé par une stratégie et que vous ne disposez pas d’un compte Document Security, ou si vous recevez une invitation à vous enregistrer, contactez la personne qui vous a envoyé le fichier pour obtenir de l’aide.
+Si vous recevez un fichier protégé par une politique et que vous ne disposez pas d’un compte Document Security, ou si vous recevez une invitation à vous enregistrer, contactez la personne qui vous a envoyé le fichier pour obtenir de l’aide.
 
 ### Utiliser des fichiers protégés par une stratégie dans Microsoft® Office {#working-with-policy-protected-files-in-microsoft-office}
 
@@ -368,7 +368,7 @@ Vous pouvez ouvrir des fichiers protégés par une politique en utilisant les m�
 
 Si vous n’êtes pas autorisé à ouvrir le fichier, vous êtes informé que l’accès est refusé. Si les privilèges d’accès aux fichiers ont été révoqués, vous pouvez également être redirigé vers une version mise à jour du fichier si celle-ci est disponible. Pour obtenir une assistance supplémentaire si vous ne pouvez pas ouvrir un fichier protégé par une politique, contactez l’éditeur de fichiers.
 
-Lorsqu’un fichier protégé est ouvert, le texte de la barre de titre qui suit le nom du fichier indique que le fichier est protégé par AEM Document Security.
+Lorsqu’un fichier protégé est ouvert, le texte de la barre de titre qui suit le nom du fichier indique que le fichier est protégé par Document Security d’AEM.
 
 Lors de l’ouverture d’un document protégé dans Document Security Extension for Microsoft® Office à partir de SharePoint Server, assurez-vous que le programme Microsoft® Office associé au type de fichier, par exemple Microsoft® Word, Microsoft® Excel ou Microsoft® PowerPoint, est ouvert. Si vous essayez d’ouvrir le fichier sans accéder à l’application associée, le document risque de ne pas s’ouvrir et un message d’erreur indiquant que vous devez installer le plug-in approprié s’affiche. Outre l’ouverture de l’application requise, il est recommandé de vider le dossier de cache avant d’ouvrir un document protégé dans Document Security Extension for Microsoft® Office à partir de SharePoint Server. De même, lorsque vous ouvrez un document protégé depuis SharePoint Server, toutes les autorisations du document sont désactivées, quelle que soit la politique appliquée.
 
@@ -389,7 +389,7 @@ Si vous ne pouvez pas supprimer une politique d’un fichier que vous avez prot�
 
 ### Affichage des paramètres de protection {#viewing-security-settings}
 
-Vous pouvez afficher les autorisations dont vous disposez pour le fichier actuel pour l’impression, la copie, la modification et l’accès hors ligne, ainsi que la période de validité du fichier.
+Vous pouvez afficher les autorisations d’impression, de copie, de modification et d’accès hors ligne dont vous disposez pour le fichier actuel, ainsi que la période de validité du fichier.
 
 Dans Document Security Extension for Microsoft® Office 2010, le groupe État de la sécurité de l’onglet Document Security affiche vos autorisations pour le fichier.
 
@@ -422,7 +422,7 @@ Document Security Extension for Microsoft® Office prend en charge l’inclusio
 
 Document Security Extension ne prend pas en charge les fonctions de filigrane enrichies telles que les filigranes PDF, les éléments multiples d’un filigrane, les options de formatage de texte et la plage de pages.
 
-Vous créez un filigrane dynamique à l’aide des pages Web de Document Security. Pour plus d’informations sur la création et l’inclusion de filigranes dynamiques dans un document protégé par une stratégie, voir [Aide pour l’utilisateur final de Document Security](https://www.adobe.com/go/learn_lc_euRightsMgmt_11_fr).
+Vous créez un filigrane dynamique à l’aide des pages web de Document Security. Pour plus d’informations sur la création et l’inclusion de filigranes dynamiques dans un document protégé par une politique, consultez la section [Guide de l’utilisateur final de Document Security](https://www.adobe.com/go/learn_lc_euRightsMgmt_11_fr).
 
 Document Security Extension for Microsoft® Office prend en charge les fonctionnalités de filigrane suivantes :
 
@@ -444,7 +444,7 @@ Document Security Extension for Microsoft® Office prend en charge les fonction
   </tr>
   <tr>
    <td><p>Utiliser comme arrière-plan</p></td>
-   <td><p>Le comportement d’affichage d’un filigrane dynamique est identique, que vous sélectionniez Utiliser comme arrière-plan ou non.</p><p>Pour Word 2010 et 2013, le filigrane dynamique s’affiche uniquement en mode Mise en page d’impression et Aperçu de l’impression. </p><p>Pour Excel 2010 et 2013 également , il apparaît dans les vues Aperçu avant impression et Disposition de page.</p></td>
+   <td><p>Le comportement d’affichage d’un filigrane dynamique est identique, que vous sélectionniez Utiliser comme arrière-plan ou non.</p><p>Pour Word 2010 et 2013, le filigrane dynamique s’affiche uniquement en mode Impression et Aperçu avant impression. </p><p>Pour Excel 2010 et 2013 également, il apparaît en mode Aperçu avant impression et Disposition de page.</p></td>
   </tr>
   <tr>
    <td><p>Position verticale</p></td>
@@ -499,9 +499,9 @@ Vous pouvez révoquer la capacité d’ouvrir les fichiers que vous avez protég
 
 1. Spécifiez un message à afficher et, le cas échéant, une URL pour la version mise à jour. Cliquez ensuite sur **OK**.
 
-Pour plus d’informations sur la révocation des privilèges d’accès aux fichiers, voir [Aide pour l’utilisateur final de Document Security](https://help.adobe.com/fr_FR/AEMForms/6.1/RMHelp/).
+Pour plus d’informations sur la révocation des privilèges d’accès aux fichiers, consultez la section [Guide de l’utilisateur final de Document Security](https://help.adobe.com/fr_FR/AEMForms/6.1/RMHelp/).
 
-Les privilèges d’accès peuvent être rétablis via les pages Web de Document Security.
+Les privilèges d’accès peuvent être rétablis via les pages web de Document Security.
 
 ### Affichage de l’historique d’audit des fichiers {#viewing-the-file-audit-history}
 
@@ -762,13 +762,13 @@ Chiffrer avec mot de passe, Ajouter une signature numérique, Marquer comme fina
 
 ## Utilisation de fournisseurs d’authentification tiers {#use-third-party-authentication-providers}
 
-Vous pouvez utiliser des fournisseurs d’authentification tiers avec AEM Forms Document Security. Ces fournisseurs d’authentification vous permettent d’ajouter un niveau d’accès supplémentaire aux documents protégés. AEM Forms Document Security prend en charge les processus d’authentification étendue suivants :
+Vous pouvez utiliser des fournisseurs d’authentification tiers avec AEM Forms Document Security. Ces fournisseurs d’authentification vous permettent d’ajouter un niveau d’accès supplémentaire aux documents protégés. Document Security d’AEM Forms prend en charge les workflows d’authentification étendue suivants :
 
 * Authentification étendue à l’aide de l’URL d’AEM Forms par défaut
 * Authentification étendue à l’aide d’une URL personnalisée
-* Processus d’authentification étendue par défaut avec les fournisseurs d’identité tiers configurés sur le serveur AEM Forms on JEE
-* Processus d’authentification étendue personnalisée avec des fournisseurs d’identité tiers configurés sur le serveur AEM Forms on JEE
-* Authentification étendue à l’aide d’une page personnalisée pour répertorier les authentifications SAML
+* Workflow d’authentification étendue par défaut avec les fournisseurs tiers d’identité configurés sur le serveur JEE d’AEM Forms
+* Workflow d’authentification étendue personnalisé avec les fournisseurs tiers d’identité configurés sur le serveur JEE d’AEM Forms
+* Authentification étendue à l’aide de la page personnalisée pour répertorier les authentifications SAML
 
 ## Glossaire {#glossary}
 
