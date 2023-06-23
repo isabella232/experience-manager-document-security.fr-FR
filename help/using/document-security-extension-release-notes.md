@@ -7,9 +7,9 @@ topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1030'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -27,27 +27,27 @@ ht-degree: 79%
 
 Cette version de Document Security Extension for Microsoft Office est compatible avec les modules complémentaires Adobe LiveCycle Rights Management ES2 et versions ultérieures, et Document Security pour AEM Forms.
 
-Consultez les informations de ce document avant d’installer AEM Document Security Extension for Microsoft Office. Pour des instructions d’installation détaillées, reportez-vous à l’article [Installation et configuration d’AEM Document Security Extension for Microsoft Office](installing-configuring-aemdsext.md).
+Consultez les informations présentées dans ce document avant d’installer AEM Document Security Extension for Microsoft Office. Pour des instructions d’installation détaillées, reportez-vous à l’article [Installation et configuration d’AEM Document Security Extension for Microsoft Office](installing-configuring-aemdsext.md).
 
 ## Problèmes résolus {#fixed-issues}
 
-* Les chaînes sont affichées verticalement et les sauts de ligne erronés sont ajoutés au contenu. (Réf. CQ-4201054)
+* Affichage vertical des chaînes et ajout des sauts de ligne erronés au contenu. (Réf. CQ-4201054)
 
 ## Problèmes connus {#known-issues}
 
 ### Plug-ins tiers non pris en charge {#third-party-plug-ins-not-supported}
 
-AEM Document Security Extension for Microsoft Office ne fonctionne pas avec les plug-ins tiers. Désinstallez tous les modules externes tiers pour Microsoft Office avant d’installer Document Security Extension for Microsoft Office.
+AEM Document Security Extension for Microsoft Office ne fonctionne pas avec les plug-ins tiers. Désinstallez tous les plug-ins tiers de Microsoft Office avant d’installer Document Security Extension for Microsoft Office.
 
 ### Options de menu désactivées dans Microsoft Word, Excel et PowerPoint {#disabled-menu-options-in-microsoft-word-excel-and-powerpoint}
 
-AEM Document Security Extension for Microsoft Office utilise des fonctions de protection intégrées pour protéger les documents, les feuilles de calcul et les présentations. Cela désactive certaines des options des menus d’Excel, Word et PowerPoint.
+AEM Document Security Extension for Microsoft Office est doté de fonctionnalités de protection intégrées pour protéger les documents, les feuilles de calcul et les présentations. Cela désactive certaines des options des menus d’Excel, Word et PowerPoint.
 
 ### Restrictions pour Microsoft Office 2013, 2016 et 2019 {#restrictions-for-microsoft-office}
 
-Dans Microsoft Office, les options suivantes ne sont pas disponibles lors d’une session protégée :
+Dans Microsoft Office, les options suivantes ne sont pas disponibles lors d’une session protégée :
 
-* Microsoft Office 2016 ou Microsoft Office 2019
+* Microsoft Office 2016 ou Microsoft Office 2019
 
    * Fichier > Enregistrer sous
    * Fichier > Historique
@@ -55,10 +55,10 @@ Dans Microsoft Office, les options suivantes ne sont pas disponibles lors d’un
    * Fichier > Exporter
    * Fichier > Publier
    * Fichier > Compte
-   * Fichier > Infos > Protect Document/Classeur/Présentation > Chiffrer avec mot de passe
-   * Fichier > Infos > Document Protect > Ajouter une signature numérique
+   * Fichier > Infos > Protéger le document/le classeur/la présentation > Chiffrer par un mot de passe
+   * Fichier > Infos > Protéger le document > Ajouter une signature numérique
    * Fichier > Infos > Protéger le document > Marquer comme final
-   * Option de partage en haut à droite
+   * L’option de partage est située en haut à droite
 
 * Microsoft Office 2013
 
@@ -66,8 +66,8 @@ Dans Microsoft Office, les options suivantes ne sont pas disponibles lors d’un
    * Fichier > Partager
    * Fichier > Exporter
    * Fichier > Compte
-   * Fichier > Infos > Protect Document/Classeur/Présentation > Chiffrer avec mot de passe
-   * Fichier > Infos > Document Protect > Ajouter une signature numérique
+   * Fichier > Infos > Protéger le document/le classeur/la présentation > Chiffrer par un mot de passe
+   * Fichier > Infos > Protéger le document > Ajouter une signature numérique
    * Fichier > Infos > Protéger le document > Marquer comme final
 
 ### Ouverture d’un document protégé à partir de SharePoint Server {#opening-a-protected-document-from-sharepoint-server}
@@ -76,7 +76,7 @@ Ouverture du document protégé : si vous tentez d’ouvrir un document protég
 
 (Facultatif) Il est recommandé de vider votre dossier de cache avant d’ouvrir un document protégé dans Document Security Extension for Microsoft Office à partir de SharePoint Server.
 
-Lorsque vous ouvrez un document protégé à partir du serveur SharePoint, toutes les autorisations du document sont désactivées, quelle que soit la stratégie appliquée.
+Lorsque vous ouvrez un document protégé à partir de SharePoint Server, toutes les autorisations du document sont désactivées, quelle que soit la politique appliquée.
 
 ### Application d’une politique avec un filigrane dynamique à Microsoft Excel 2013, Microsoft Excel 2016 et Microsoft Excel 2019 sans qu’aucune imprimante ne soit installée {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
@@ -86,7 +86,7 @@ Lorsque vous appliquez une politique avec filigrane dynamique à un fichier Exce
 
 Il est recommandé de désactiver le paramètre Windows Data Execution Prevention (DEP) lors de l’utilisation des applications Document Security Extension for Microsoft Office.
 
-### Les fichiers Microsoft Office partagés ne peuvent pas être protégés à l’aide de Document Security Extension {#shared-microsoft-office-files-cannot-be-protected-using-document-security-extension}
+### Les fichiers Microsoft Office partagés ne peuvent pas être protégés à l’aide de Document Security Extension. {#shared-microsoft-office-files-cannot-be-protected-using-document-security-extension}
 
 Quand vous protégez un fichier Microsoft Office partagé à l’aide de Document Security Extension, une erreur se produit et le fichier partagé n’est pas sécurisé.
 
@@ -120,6 +120,6 @@ Si plusieurs certificats sont présents sur l’ordinateur client et que l’uti
 
 ### Microsoft PowerPoint permet de modifier les documents protégés {#microsoft-powerpoint-allows-editing-protected-documents}
 
-Lors d’une tentative de modification d’un document protégé, Microsoft PowerPoint affiche le message « Vous n’êtes pas autorisé à modifier ce document. Vous ne pourrez pas enregistrer vos modifications.&quot; Après la fermeture du message, les utilisateurs peuvent continuer à ajouter du texte ou à modifier le document. Toutefois, les modifications apportées aux documents protégés ne sont pas enregistrées.
+Lors d’une tentative de modification d’un document protégé, Microsoft PowerPoint affiche le message « Vous n’êtes pas autorisé à modifier ce document. Vous ne pourrez pas enregistrer vos modifications. » Après la fermeture du message, les utilisateurs et les utilisatrices peuvent continuer à ajouter du texte ou à modifier le document. Toutefois, les modifications apportées aux documents protégés ne sont pas enregistrées.
 
-Le comportement mentionné ci-dessus est celui attendu dans PowerPoint 2013, PowerPoint 2016 et PowerPoint 2019.
+Le comportement indiqué ci-dessus se manifeste dans PowerPoint 2013, PowerPoint 2016 et PowerPoint 2019.
