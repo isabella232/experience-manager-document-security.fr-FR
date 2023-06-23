@@ -8,9 +8,9 @@ topic-tags: using
 discoiquuid: bdc3f174-e417-4d3e-b3af-972cdcc10133
 exl-id: 98f24032-0774-47f8-bcc5-1ee37b417833
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 84%
 
 Si vous rencontrez des problèmes pour installer et configurer AEM Document Security Extension for Microsoft Office, assurez-vous que vous avez soigneusement suivi les instructions figurant dans la section - Avant l’installation - de l’article [Installation](installing-configuring-aemdsext.md).
 
-Si vous avez tout installé et configuré conformément à la documentation, passez en revue les sections suivantes pour connaître des problèmes similaires à ceux que vous rencontrez.
+Si l’installation et la configuration se sont déroulées conformément à la documentation, consultez les sections suivantes pour prendre connaissance de problèmes similaires à ceux que vous rencontrez.
 
 ### Document Security Extension ne se charge pas lors du chargement des applications Microsoft Office {#document-security-extension-fails-to-load-for-microsoft-office-applications}
 
-La propriété LoadBehavior dans le registre Windows spécifie le comportement d’exécution du module externe Document Security. Si la propriété LoadBehavior est définie sur 3, tous les modules externes sont chargés automatiquement. Avant d’installer Document Security Extension for Microsoft Office, assurez-vous que la valeur de la propriété LoadBehavior est définie sur 3.
+La propriété LoadBehavior dans le registre Windows spécifie le comportement d’exécution du module externe Document Security. Si la propriété LoadBehavior est définie sur 3, tous les plug-ins sont chargés automatiquement. Avant d’installer Document Security Extension for Microsoft Office, assurez-vous que la valeur de la propriété LoadBehavior est définie sur 3.
 
-1. Effectuez une sauvegarde du registre Windows avant d’apporter des modifications. Pour obtenir des instructions détaillées, voir [Comment modifier le registre Windows](https://support.microsoft.com/fr-fr/kb/136393).
+1. Effectuez une sauvegarde du registre Windows avant d’apporter des modifications. Pour obtenir des instructions détaillées, consultez la section [Modifier le registre Windows](https://support.microsoft.com/fr-fr/kb/136393).
 1. Dans l’éditeur de registre, accédez à HKEY_CURRENT_USER\Software\Microsoft\Office\Word\Addins\Adobe.DRMIntegration.WordAddin ou HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Word\Addins\Adobe.DRM.
 1. Définissez la valeur de la propriété **LoadBehavior** sur 3.
 
