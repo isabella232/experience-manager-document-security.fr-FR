@@ -75,7 +75,7 @@ Si vous devez accéder aux pages web de Document Security par authentification 
 >Si vous ne pouvez pas vous connecter au serveur, essayez d’ouvrir les pages web de Document Security dans Internet Explorer. Si vous ne pouvez pas vous connecter au serveur à l’aide d’Internet Explorer ou si une boîte de dialogue affiche un avertissement concernant le certificat du serveur, Document Security Extension for Microsoft® Office ne peut pas se connecter au serveur. Contactez l’administration du serveur pour obtenir de l’aide.
 
 >[!NOTE]
-Si vous ne pouvez pas vous connecter à Document Security, un message s’affiche indiquant : « Le nom d’utilisateur et le mot de passe sont incorrects. Vérifiez vos paramètres de configuration, puis réessayez. ». Ce message peut s’afficher si vous ne pouvez pas vous connecter pour une autre raison. Si vous vous connectez au serveur pour la première fois, vérifiez que vous définissez correctement le nom et le port du serveur.
+>Si vous ne pouvez pas vous connecter à Document Security, un message s’affiche indiquant : « Le nom d’utilisateur et le mot de passe sont incorrects. Vérifiez vos paramètres de configuration, puis réessayez. ». Ce message peut s’afficher si vous ne pouvez pas vous connecter pour une autre raison. Si vous vous connectez au serveur pour la première fois, vérifiez que vous définissez correctement le nom et le port du serveur.
 
 #### Spécifiez le serveur par défaut {#specify-the-default-server}
 
@@ -109,7 +109,7 @@ Effectuez la procédure suivante pour activer l’authentification étendue à l
    Cliquez sur **[!UICONTROL Enregistrer]**.
 
    >[!NOTE]
-   Utilisez un nom d’hôte qualifié complet dans l’URL. Il est recommandé d’utiliser le protocole HTTPS.
+   >Utilisez un nom d’hôte qualifié complet dans l’URL. Il est recommandé d’utiliser le protocole HTTPS.
 
    Désormais, la sécurité des documents AEM Forms est configurée pour utiliser l’authentification étendue avec l’URL par défaut d’AEM Forms.
 
@@ -133,7 +133,7 @@ Pour activer l’authentification étendue avec une URL d’accueil personnalis�
 1. Ajoutez les entrées suivantes au fichier config.xml sous le nœud SSO après l’entrée *&lt;node name=&quot;AllowedUrls&quot;>* :
 
    >[!NOTE]
-   &lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>!!discoiqbr!!&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>!!discoiqbr!!&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>!!discoiqbr!!
+   >&lt;entry key=&quot;sso-l&quot; value=&quot;/ sample_/login.jsp&quot;/>!!discoiqbr!!&lt;entry key=&quot;sso-s&quot; value=&quot;/ sample_/welcome.jsp&quot;>!!discoiqbr!!&lt;entry key=&quot;sso-o&quot; value=&quot;/ sample_/logout.jsp&quot;/>!!discoiqbr!!
 
    Pour suivre la procédure de mise à jour du fichier config.xml, consultez la section [Modifier manuellement le fichier de configuration de Document Security](https://helpx.adobe.com/fr/aem-forms/6-3/admin-help/configuring-client-server-options.html#manually_editing_the_document_security_configuration_file).
 
@@ -178,7 +178,7 @@ Si vous n’avez pas encore de compte Document Security, Document Security peut 
 Après vous être enregistré et avoir activé votre compte, vous pouvez utiliser les fichiers protégés par une politique pour lesquels vous disposez d’une autorisation.
 
 >[!NOTE]
-Si vous recevez un fichier protégé par une politique et que vous ne disposez pas d’un compte Document Security, ou si vous recevez une invitation à vous enregistrer, contactez la personne qui vous a envoyé le fichier pour obtenir de l’aide.
+>Si vous recevez un fichier protégé par une politique et que vous ne disposez pas d’un compte Document Security, ou si vous recevez une invitation à vous enregistrer, contactez la personne qui vous a envoyé le fichier pour obtenir de l’aide.
 
 Si vous recevez une invitation à vous enregistrer par email à l’aide de Document Security, vous pouvez vous enregistrer à l’aide de l’URL indiquée pour ouvrir la page d’enregistrement en ligne. Une fois enregistré, vous recevrez un second e-mail concernant l’activation de votre compte.
 
@@ -189,7 +189,7 @@ Si vous recevez une invitation à vous enregistrer par email à l’aide de Docu
 1. Entrez votre nom, votre organisation et votre mot de passe dans les zones appropriées. Votre mot de passe peut constituer n’importe quelle combinaison de huit caractères.
 
    >[!NOTE]
-   Veillez à choisir un mot de passe facile à retenir ; aucune méthode n’est proposée pour rechercher des mots de passe oubliés.
+   >Veillez à choisir un mot de passe facile à retenir ; aucune méthode n’est proposée pour rechercher des mots de passe oubliés.
 
 1. Cliquez sur **Enregistrer**. Un message s’affiche pour vous demander de vérifier votre adresse électronique en vue d’envoyer un email d’activation.
 1. Ouvrez l’email de confirmation d’enregistrement de Document Security.
@@ -327,7 +327,7 @@ Vous pouvez appliquer les politiques disponibles à un fichier, y compris celles
 Une fois la politique appliquée, elle est ajoutée à la liste des éléments récemment utilisés du menu Document Security d’AEM. Vous pouvez ainsi appliquer rapidement les politiques coutumières. Si vous utilisez plusieurs instances Document Security, la liste des éléments récemment utilisés affiche les politiques exclusives au serveur auquel vous êtes actuellement connecté ou pour votre serveur par défaut si vous ne vous êtes pas encore connecté à une instance Document Security.
 
 >[!NOTE]
-Vous pouvez appliquer des stratégies uniquement aux fichiers de documents Word (.doc, également .docx et .docm dans Microsoft® Office 2010 et 2013), de classeurs Excel (.xls, également .xlsx et .xlsm dans Microsoft® Office 2010 et 2013) et de présentations PowerPoint (.ppt, également .pptx et .pptm dans Microsoft® 2010 et 2013). Vous ne pouvez pas appliquer de stratégies aux fichiers de modèle Word (.dot), aux fichiers de modèle Excel (.xlt) ni aux fichiers de modèle de conception PowerPoint (.pot).
+>Vous pouvez appliquer des stratégies uniquement aux fichiers de documents Word (.doc, également .docx et .docm dans Microsoft® Office 2010 et 2013), de classeurs Excel (.xls, également .xlsx et .xlsm dans Microsoft® Office 2010 et 2013) et de présentations PowerPoint (.ppt, également .pptx et .pptm dans Microsoft® 2010 et 2013). Vous ne pouvez pas appliquer de stratégies aux fichiers de modèle Word (.dot), aux fichiers de modèle Excel (.xlt) ni aux fichiers de modèle de conception PowerPoint (.pot).
 
 #### Application d’une politique {#apply-a-policy}
 
@@ -358,7 +358,7 @@ Document Security Extension for Microsoft® Office limite certaines fonctionnal
 Si vous travaillez avec un fichier protégé par une politique, il se peut que certaines fonctionnalités du produit ne soient pas disponibles ou ne fonctionnent pas comme d’habitude. Si un fichier non protégé est également ouvert, la plupart des fonctions du fichier non protégé sont activées, à l’exception de celles qui vous permettent d’importer ou de copier du contenu d’un fichier protégé par une politique pour lequel vous ne disposez pas des autorisations de copie ou d’exportation.
 
 >[!NOTE]
-Lorsque vous utilisez des applications Office prises en charge par Document Security Extension, il est recommandé de désactiver le paramètre Windows DEP. En outre, pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security Extension et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
+>Lorsque vous utilisez des applications Office prises en charge par Document Security Extension, il est recommandé de désactiver le paramètre Windows DEP. En outre, pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security Extension et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
 
 Si une fonction n’est pas disponible, le nom de la commande dans le menu et le bouton de barre d’outils correspondant ne sont pas disponibles. Dans Document Security Extension for Microsoft® Office, lorsque vous placez le pointeur de la souris sur une commande ou un bouton, une info-bulle indique que la commande est rendue indisponible par Document Security.
 
@@ -385,7 +385,7 @@ Si vous en avez l’autorisation, vous pouvez supprimer la protection de politiq
    Si vous n’avez pas encore indiqué d’informations de connexion à Document Security, une boîte de dialogue vous invite à saisir votre nom d’utilisateur et votre mot de passe.
 
 >[!NOTE]
-Si vous ne pouvez pas supprimer une politique d’un fichier que vous avez protégé, contactez un administrateur Document Security.
+>Si vous ne pouvez pas supprimer une politique d’un fichier que vous avez protégé, contactez un administrateur Document Security.
 
 ### Affichage des paramètres de protection {#viewing-security-settings}
 
@@ -404,7 +404,7 @@ Si votre administration a activé la fonctionnalité d’application automatique
 Si l’application automatique de la stratégie est activée, Document Security Extension for Microsoft® Office vous invite à vous connecter au serveur Document Security. Vous devez indiquer votre nom d’utilisateur et votre mot de passe pour que le seveur vous authentifie. Si vous avez fourni les informations d’identification appropriées, le document est enregistré et protégé.
 
 >[!NOTE]
-Si vous ne pouvez pas vous connecter à Document Security, le document peut être enregistré ou non. Cela dépend de la manière dont votre administrateur a configuré la politique d’application automatique. Vérifiez avec l’administrateur comment les documents sont traités dans cette situation.
+>Si vous ne pouvez pas vous connecter à Document Security, le document peut être enregistré ou non. Cela dépend de la manière dont votre administrateur a configuré la politique d’application automatique. Vérifiez avec l’administrateur comment les documents sont traités dans cette situation.
 
 ### Synchronisation en vue de l’accès hors connexion {#synchronizing-for-offline-access}
 
@@ -542,7 +542,7 @@ La plupart des politiques accordent des autorisations complètes à l’éditeur
 Si une fonction n’est pas disponible, le nom de la commande dans le menu et le bouton correspondant de la barre d’outils apparaissent en grisé.
 
 >[!NOTE]
-L’application d’une politique à un fichier contenant un lien vers un fichier incorporé n’applique pas la politique au fichier lié. Document Security for Microsoft® Office n’étend pas la protection aux fichiers liés.
+>L’application d’une politique à un fichier contenant un lien vers un fichier incorporé n’applique pas la politique au fichier lié. Document Security for Microsoft® Office n’étend pas la protection aux fichiers liés.
 
 * Les fichiers Word, Excel et PowerPoint protégés par une politique ne peuvent pas s’ouvrir dans une fenêtre du navigateur Internet Explorer.
 * Les utilisateurs qui n’ont obtenu que l’autorisation Modifier ne peuvent pas copier du contenu dans un fichier issu d’une autre application à l’aide du presse-papiers Windows. Les utilisateurs et utilisatrices peuvent copier du contenu dans des fichiers en activant l’option Presse-papiers de Microsoft® Office.
