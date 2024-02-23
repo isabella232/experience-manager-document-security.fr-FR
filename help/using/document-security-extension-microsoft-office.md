@@ -8,7 +8,7 @@ discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
 source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
 workflow-type: ht
-source-wordcount: '1313'
+source-wordcount: '1288'
 ht-degree: 100%
 
 ---
@@ -50,11 +50,11 @@ Lorsqu’une personne utilisatrice tente d’ouvrir un fichier protégé par une
 * indéfiniment ou pendant la période de validité spécifiée dans la politique ;
 * jusqu’à ce que l’administrateur ou la personne ayant appliqué la politique révoque l’accès au fichier ou modifie la politique.
 
-   Si la personne qui a appliqué la stratégie la modifie ou révoque l’accès au fichier, les autorisations de la personne utilisatrice concernant le fichier sont modifiées ou supprimées même si elle dispose déjà du fichier. Si le fichier lui-même a été révoqué, une URL peut être fournie à la personne utilisatrice pour obtenir une copie mise à jour.
+  Si la personne qui a appliqué la stratégie la modifie ou révoque l’accès au fichier, les autorisations de la personne utilisatrice concernant le fichier sont modifiées ou supprimées même si elle dispose déjà du fichier. Si le fichier lui-même a été révoqué, une URL peut être fournie à la personne utilisatrice pour obtenir une copie mise à jour.
 
-   Les fichiers protégés par une stratégie peuvent être ouverts hors ligne (sans connexion Internet ni réseau), si la stratégie autorise l’accès hors ligne, pendant la durée de la période d’ouverture hors ligne spécifiée dans la stratégie. Lorsque la période d’ouverture hors connexion se termine, l’utilisateur doit se connecter et se synchroniser avec Document Security, ce qui démarre une nouvelle période d’ouverture.
+  Les fichiers protégés par une stratégie peuvent être ouverts hors ligne (sans connexion Internet ni réseau), si la stratégie autorise l’accès hors ligne, pendant la durée de la période d’ouverture hors ligne spécifiée dans la stratégie. Lorsque la période d’ouverture hors connexion se termine, l’utilisateur doit se connecter et se synchroniser avec Document Security, ce qui démarre une nouvelle période d’ouverture.
 
-   Si la politique permet d’enregistrer le fichier et qu’un utilisateur enregistre une copie du fichier protégé par une politique, celle-ci est automatiquement appliquée au fichier enregistré. Les événements tels que les tentatives d’ouverture du nouveau fichier sont également contrôlés et enregistrés comme pour le fichier original.
+  Si la politique permet d’enregistrer le fichier et qu’un utilisateur enregistre une copie du fichier protégé par une politique, celle-ci est automatiquement appliquée au fichier enregistré. Les événements tels que les tentatives d’ouverture du nouveau fichier sont également contrôlés et enregistrés comme pour le fichier original.
 
 ## Utiliser Document Security pour protéger vos fichiers {#using-document-security-to-protect-your-files}
 
